@@ -1,0 +1,26 @@
+config ARCH_ARM
+    bool "arm"
+    default y
+
+config ARMV
+    string "armv number"
+    default "armv7-a"
+    help
+        armv8-a, armv7ve, armv7-a
+
+config FEAT
+    string "special feat."
+    help
+        +crc
+
+config KERNEL_ARCH
+    string "arm arch"
+    default "aarch32"
+    help
+        aarch32,aarch64,arm_hyp
+
+config MAX_NUM_NODES
+    int "smp core numbers"
+    default 8
+    help
+        0-N

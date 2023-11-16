@@ -1,0 +1,46 @@
+source "$(ARCH_DIR)/$(ARCH)/Kconfig"
+
+config ARCH 
+    string "cpu arch"
+    default "arm"
+    help
+        cpu arch
+
+config KERNEL_BITS
+    int "kernel bits"
+    default 32
+    help
+        32/64
+
+config HAVE_FPU
+    bool "fpu"
+    default n
+
+config OPTIMISATION
+    string "optimisation"
+    default -O0
+    help
+        -O0,-O1, -O2,-O3,-Os
+
+config OPTIMISATION_CLONE
+    bool "optimisation clone"
+    default n
+    
+config WHOLE_PROGRAM
+    bool "whole program"
+    default n
+
+config DEBUG_BUILD
+    bool "debug build"
+    default y
+
+config CROSS_PREFIX
+    string "compiler prefix"
+    help
+        such as aarch64-linux-gnu-
+
+config PADDR_BITS_TOP
+    int "paddr max bits"
+    default 40
+    help
+        40/44

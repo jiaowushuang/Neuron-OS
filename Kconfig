@@ -1,0 +1,27 @@
+mainmenu "Neuro Kernel Configuration"
+
+source "plat/Kconfig.defconfig"
+
+menu "ARCH Configuration"
+source "arch/Kconfig"
+endmenu
+
+menu "SOC Configuration"
+source "soc/Kconfig"
+endmenu
+
+menu "PLATFORM Configuration"
+source "plat/Kconfig"
+endmenu
+
+menu "Build and Link Features"
+config TOOLCHAIN_GCC
+    bool "gcc"
+    help
+        gcc
+
+config TOOLCHAIN_LLVM
+    bool "llvm"
+    help
+        llvm
+endmenu

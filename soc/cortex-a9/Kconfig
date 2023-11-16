@@ -1,0 +1,5 @@
+config CPU 
+    string "cpu infrastructure"
+    default "cortex-a9"
+    help
+        cpu infrastructure - such as cortex-a9

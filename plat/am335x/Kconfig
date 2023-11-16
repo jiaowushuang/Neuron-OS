@@ -1,0 +1,13 @@
+config PLATFORM
+    string "platform number"
+    default "am335x"
+    help
+        am335x
+
+config BOARD
+    string "board number"
+    default "am335x-boneblack"
+    help
+        am335x-boneblack
+
+
