@@ -11,7 +11,6 @@
 #include <debug.h>
 #include <runtime/context_mgmt.h>
 #include <cpu_data.h>
-#include <interrupt_mgmt.h>
 #include <context.h>
 #include <drivers/gic/gicv3.h>
 

@@ -11,13 +11,9 @@
 #include <arch.h>
 #include <arch_features.h>
 #include <arch_helpers.h>
-#include <bl1/bl1.h>
 #include <common.h>
 #include <debug.h>
-#include <drivers/auth/auth_mod.h>
-#include <drivers/auth/crypto_mod.h>
 #include <drivers/console/console.h>
-#include <lib/cpus/errata_report.h>
 #include <utils.h>
 
 void kernel_setup(void)
